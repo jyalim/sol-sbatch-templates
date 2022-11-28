@@ -25,7 +25,7 @@ logrec="${logdir}/${now}--rclone-${jobname}-${jobid}.log"
 
 ! [[ -d "$logdir" ]] && mkdir -pv "$logdir" || :
 
-module load rclone-1.57.0-gcc-11.2.0
+module load rclone/1.60.1
 
 N=$(nproc)
 
