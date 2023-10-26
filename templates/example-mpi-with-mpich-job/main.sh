@@ -14,11 +14,11 @@ echo CORES-PER-TASK: ${SLURM_CPUS_PER_TASK:-1}
 
 module load mpich/4.1.2
 echo "Running linux program \`hostname\` on each compute node"
-mpirun -np $SLURM_NTASKS -launcher slurm "hostname"
+mpirun -launcher slurm "hostname"
 echo "Running networking benchmark \`osu_bibw\` between alloc. nodes"
 module load microOSU/mpich/4.1.2
-mpirun -np $SLURM_NTASKS -launcher slurm "$(type -p osu_bibw)"
+mpirun -launcher slurm "$(type -p osu_bibw)"
 echo "Compiling a simple test C program"
 mpicc hello_c.c -o hello
 echo "Executing simple test C program"
-mpirun -np $SLURM_NTASKS -launcher slurm "./hello"
+mpirun -launcher slurm "./hello"
