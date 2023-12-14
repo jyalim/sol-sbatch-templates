@@ -15,9 +15,10 @@ echo CORES-PER-TASK: ${SLURM_CPUS_PER_TASK:-1}
 module load intel/parallel-studio-2020.4
 echo "Running linux program \`hostname\` on each compute node"
 mpiexec.hydra -genvall -n 2 -ppn 1 hostname
-echo "Running networking benchmark \`osu_bibw\` between alloc. nodes"
-mpiexec.hydra -genvall -n 2 -ppn 1 osu_bibw
 echo "Compiling a simple test C program"
 mpicc hello_c.c -o hello
 echo "Executing simple test C program"
 mpiexec.hydra -genvall -n 2 -ppn 1 ./hello
+module load microOSU/intel/parallel-studio-2020.4/7.3
+echo "Running networking benchmark \`osu_bibw\` between alloc. nodes"
+mpiexec.hydra -genvall -n 2 -ppn 1 osu_bibw
