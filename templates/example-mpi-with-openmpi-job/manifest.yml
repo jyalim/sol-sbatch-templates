@@ -4,12 +4,12 @@
 # attributes set in the database for the newly created job
 
 # name of the template and default job name when copied
-name: Example MPI Job using HPCX (OpenMPI 4.1.5)
+name: Example MPI Job using OpenMPI 4.1.5 (HPCX 2.13.1)
 
 # notes tell the user what the template is for
 # and display when the user clicks "create Job ()Choose Template)" and selects
 # this template
-notes: A job template for MPI using HPCX 2.13.1 (OpenMPI 4.1.5)
+notes: A job template for MPI using OpenMPI 4.1.5 (HPCX 2.13.1)
 
 # specifies the script that will be submitted to the batch system
 script: main.sh # specify the job script

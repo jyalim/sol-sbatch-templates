@@ -4,7 +4,7 @@
 # attributes set in the database for the newly created job
 
 # name of the template and default job name when copied
-name: Example MPI Job using intel's 2020.4 parallel studio
+name: Example MPI Job using Intel's 2020.4 parallel studio
 
 # notes tell the user what the template is for
 # and display when the user clicks "create Job ()Choose Template)" and selects

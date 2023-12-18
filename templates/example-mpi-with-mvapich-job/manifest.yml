@@ -4,12 +4,12 @@
 # attributes set in the database for the newly created job
 
 # name of the template and default job name when copied
-name: Example MPI Job using MPICH
+name: Example MPI Job using MVAPICH
 
 # notes tell the user what the template is for
 # and display when the user clicks "create Job ()Choose Template)" and selects
 # this template
-notes: A job template for MPI using MPICH 4.1.2
+notes: A job template for MPI using MVAPICH 4.1.2
 
 # specifies the script that will be submitted to the batch system
 script: main.sh # specify the job script
